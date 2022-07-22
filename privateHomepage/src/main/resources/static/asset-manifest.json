@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8bcc365.css",
+    "main.js": "/static/js/main.ecd35548.js",
+    "static/media/NanumSquareOTFR.ttf": "/static/media/NanumSquareOTFR.bf747bb6df6d7985f28a.ttf",
+    "static/media/SFPRODISPLAYREGULAR.ttf": "/static/media/SFPRODISPLAYREGULAR.4e4c8514b7764e476aa6.ttf",
+    "static/media/favicon.png": "/static/media/favicon.60c4f53d340d7c84130f.png",
+    "static/media/else.png": "/static/media/else.2d96f8bae9de5e6af472.png",
+    "static/media/frontend.png": "/static/media/frontend.c2d12c89b1d358018f38.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/user.svg": "/static/media/user.9175e661cb810302f1923836d4473a68.svg",
+    "index.html": "/index.html",
+    "static/media/home.svg": "/static/media/home.7cba596cfe57d4af469ec46722e22c69.svg",
+    "static/media/phone.svg": "/static/media/phone.ee6392a380b02fe5efa26f47a8b54e0b.svg",
+    "static/media/hamburger.svg": "/static/media/hamburger.909740912e9727c22d544d6a77df3120.svg",
+    "static/media/calendar.svg": "/static/media/calendar.7bb1b24db0b61c55b8ff859e7c8b804d.svg",
+    "static/media/school.svg": "/static/media/school.2f6d1be5ec3a74e5207a8a9b6fc8dd00.svg",
+    "static/media/mail.svg": "/static/media/mail.5a387e74dbef285fe81a3cd40ea170b5.svg",
+    "static/media/prevArrow.svg": "/static/media/prevArrow.978b865bf213131c50d993624461cbd9.svg",
+    "main.a8bcc365.css.map": "/static/css/main.a8bcc365.css.map",
+    "main.ecd35548.js.map": "/static/js/main.ecd35548.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8bcc365.css",
+    "static/js/main.ecd35548.js"
+  ]
+}
