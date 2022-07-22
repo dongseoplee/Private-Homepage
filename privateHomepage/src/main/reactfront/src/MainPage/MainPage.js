@@ -32,12 +32,12 @@ const MainPage = () => {
 						</Fade>
 						{line2 ? (
 							<Fade top>
-								<div className="profile-content">N년차 프론트/백엔드 개발자</div>
+								<div className="profile-content">프론트엔드 개발자</div>
 							</Fade>
 						) : null}
 						{line3 ? (
 							<Fade top>
-								<div className="profile-content">강동원입니다.</div>
+								<div className="profile-content">최경주입니다.</div>
 							</Fade>
 						) : null}
 					</div>

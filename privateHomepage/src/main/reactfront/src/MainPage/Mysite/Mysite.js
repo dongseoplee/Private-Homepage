@@ -22,7 +22,7 @@ const Mysite = () => {
 						<li className="site-desc">각종 소스 코드 저장소</li>
 					</div>
 				</Fade>
-				<Fade bottom>
+				<Fade right>
 					<div className="each-table">
 						<img className="site-image" src={favicon} />
 						<div className="site-title">CGJ's Portfolio</div>

@@ -22,12 +22,12 @@ const About = () => {
 						<div className="each-table">
 							<img className="icon" src={user} />
 							<div className="description">이름</div>
-							<div className="answer">강동원</div>
+							<div className="answer">최경주</div>
 						</div>
 						<div className="each-table">
 							<img className="icon" src={calendar} />
 							<div className="description">생년월일</div>
-							<div className="answer">99.99.99</div>
+							<div className="answer">99.02.27</div>
 						</div>
 						<div className="each-table">
 							<img className="icon" src={home} />
@@ -42,13 +42,13 @@ const About = () => {
 						<div className="each-table">
 							<img className="icon" src={mail} />
 							<div className="description">이메일</div>
-							<div className="answer">xxxxxxx@naver.com</div>
+							<div className="answer">rudwn5142@naver.com</div>
 						</div>
 						<div className="each-table">
 							<img className="icon" src={school} />
 							<div className="description">학력</div>
 							<div className="answer">
-								xx대학교 <br /> (xxxxxx전공)
+								세종대학교 <br /> (스마트기기공학전공)
 							</div>
 						</div>
 					</div>
