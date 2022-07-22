@@ -101,7 +101,7 @@ const NavBar = () => {
 	return (
 		<div className="Nav">
 			<div className="Nav-left">
-				<div className="Nav-title">XXX의 홈페이지입니다.</div>
+				<div className="Nav-title">이동섭의 홈페이지입니다.</div>
 			</div>
 			<div className="Nav-center" />
 			<div className="Nav-right">

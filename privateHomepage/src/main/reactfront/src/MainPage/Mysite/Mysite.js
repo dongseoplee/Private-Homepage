@@ -25,7 +25,7 @@ const Mysite = () => {
 				<Fade left>
 					<div className="each-table">
 						<img className="site-image" src={favicon} />
-						<div className="site-title">CGJ's Portfolio</div>
+						<div className="site-title">Lee Dong-Seop Homepage</div>
 						<a href="https://GyeongJuChoi.com" className="site-url">
 							https://GyeongJuChoi.com
 						</a>
