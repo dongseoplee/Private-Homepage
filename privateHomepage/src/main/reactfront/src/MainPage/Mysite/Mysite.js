@@ -13,7 +13,7 @@ const Mysite = () => {
 				<div className="title">My Site</div>
 			</Fade>
 			<div className="site-table">
-				<Fade left>
+				<Fade bottom>
 					<div className="each-table">
 						<img className="site-image" src={github} />
 						<a href="https://github.com/ChoiGyeongJu" className="site-url">
@@ -22,7 +22,7 @@ const Mysite = () => {
 						<li className="site-desc">각종 소스 코드 저장소</li>
 					</div>
 				</Fade>
-				<Fade left>
+				<Fade bottom>
 					<div className="each-table">
 						<img className="site-image" src={favicon} />
 						<div className="site-title">CGJ's Portfolio</div>

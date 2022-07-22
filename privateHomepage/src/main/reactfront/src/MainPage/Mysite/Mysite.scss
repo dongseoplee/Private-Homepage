@@ -79,9 +79,10 @@
 		}
 	}
 
-    @media only screen and (max-width: 1002.2px) {
-        .site-table {
-			width: auto;
+	@media only screen and (max-width: 1002.2px) {
+		.site-table {
+			// width: auto;
+			width: 100%;
 			display: grid;
 			grid-template-columns: 1fr;
 			place-items: center;
@@ -89,32 +90,30 @@
 
 			.each-table {
 				width: 100%;
-				max-width: 16rem;
+				max-width: 22rem;
 				overflow: hidden;
 				height: 16rem;
 				display: flex;
 				background-color: #f5f5f5;
 				border-radius: 24px;
-				margin-right: 3rem;
-				margin-left: 3rem;
-                margin-bottom: 3.5rem;
+				margin-bottom: 3.5rem;
 
 				.site-image {
 					width: 90%;
 					max-width: 12rem;
 					padding: 0.5rem 19em 10rem 2rem;
-					margin-top: 1.5rem;	
+					margin-top: 1.5rem;
 					display: flex;
 					margin-left: -0.7rem;
 				}
 
 				.site-title {
-					width:60%;
+					width: 60%;
 					font-family: NanumSquareOTF;
 					font-size: 1.2rem;
 					font-weight: 800;
 					position: absolute;
-					margin-left: 6.5rem;
+					margin-left: 6rem;
 					margin-top: 3rem;
 					overflow-wrap: break-word;
 				}
@@ -142,5 +141,5 @@
 				}
 			}
 		}
-    }
+	}
 }
