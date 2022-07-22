@@ -11,21 +11,28 @@ import './ImageCarousel.scss';
 
 import prevImage from '../../images/arrows/prevArrow.svg';
 
+import profile1 from '../../images/profile/profile1.jpg';
+import profile2 from '../../images/profile/profile2.jpg';
+import profile3 from '../../images/profile/profile3.jpg';
+
 const ImageCarousel = () => {
 	const images = [
 		{
 			id: 1,
-			src: 'https://blog.kakaocdn.net/dn/LhjTv/btrBsuEWxKZ/QL88HW1O9Q8BrqiwlIBdu1/img.jpg',
+			// src: 'https://blog.kakaocdn.net/dn/LhjTv/btrBsuEWxKZ/QL88HW1O9Q8BrqiwlIBdu1/img.jpg',
+			src: profile1,
 			alt: 'pr1',
 		},
 		{
 			id: 2,
-			src: 'https://t1.daumcdn.net/cfile/tistory/9935CD355A818D6E1B',
+			// src: 'https://t1.daumcdn.net/cfile/tistory/9935CD355A818D6E1B',
+			src: profile2,
 			alt: 'pr2',
 		},
 		{
 			id: 3,
-			src: 'https://images.khan.co.kr/article/2022/03/24/l_2022032402001438000274241.jpg',
+			// src: 'https://images.khan.co.kr/article/2022/03/24/l_2022032402001438000274241.jpg',
+			src: profile3,
 			alt: 'pr3',
 		},
 	];
