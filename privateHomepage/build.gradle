@@ -19,7 +19,8 @@ repositories {
 }
 
 dependencies {
-	implementation 'mysql:mysql-connector-java'
+	implementation("org.mariadb.jdbc:mariadb-java-client:2.1.2")
+	//implementation 'mysql:mysql-connector-java'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
@@ -30,6 +31,9 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 }
 
+//localhost:3000 -> localhost:8080
+//react, spring boot 연동
+/*
 tasks.named('test') {
 	useJUnitPlatform()
 }
@@ -74,3 +78,5 @@ task copyReactBuildFiles(type: Copy) {
 	from "$frontendDir/build"
 	into "$projectDir/src/main/resources/static"
 }
+
+ */
