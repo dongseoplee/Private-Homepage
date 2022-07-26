@@ -16,4 +16,11 @@ public class SampleService {
     public List<Sample> getSamples() {
         return sampleRepository.findAll();
     }
+
+    /*
+    public List<Sample> getSamplesByUserName(String userName) {
+
+        return sampleRepository.findByUserName(userName);
+    }
+    */
 }
