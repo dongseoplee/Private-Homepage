@@ -25,7 +25,7 @@
 		margin-bottom: 3.5rem;
 	}
 
-	@media only screen and (min-width: 1002px) {
+	@media only screen and (min-width: 877.8px) {
 		.site-table {
 			width: auto;
 			display: grid;
@@ -79,10 +79,10 @@
 		}
 	}
 
-	@media only screen and (max-width: 1002.2px) {
+	@media only screen and (max-width: 878px) {
 		.site-table {
-			// width: auto;
-			width: 100%;
+			width: auto;
+			// width: 100%;
 			display: grid;
 			grid-template-columns: 1fr;
 			place-items: center;
@@ -99,27 +99,27 @@
 				margin-bottom: 3.5rem;
 
 				.site-image {
-					width: 90%;
-					max-width: 12rem;
+					width: auto;
+					// max-width: 12rem;
 					padding: 0.5rem 19em 10rem 2rem;
 					margin-top: 1.5rem;
 					display: flex;
-					margin-left: -0.7rem;
+					// margin-left: -0.7rem;
 				}
 
 				.site-title {
-					width: 60%;
+					width: auto;
 					font-family: NanumSquareOTF;
 					font-size: 1.2rem;
 					font-weight: 800;
 					position: absolute;
-					margin-left: 6rem;
+					margin-left: 7rem;
 					margin-top: 3rem;
 					overflow-wrap: break-word;
 				}
 
 				.site-url {
-					width: 80%;
+					width: auto;
 					position: absolute;
 					font-family: NanumSquareOTF;
 					font-size: 1rem;
@@ -131,7 +131,7 @@
 				}
 
 				.site-desc {
-					width: 80%;
+					width: auto;
 					position: absolute;
 					font-family: NanumSquareOTF;
 					font-size: 1rem;
