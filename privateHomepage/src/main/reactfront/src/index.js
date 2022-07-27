@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './Router';
@@ -7,10 +8,10 @@ import { RecoilRoot } from 'recoil';
 // import './styles/common.scss';
 
 ReactDOM.render(
-	<React.StrictMode>
+	<React.Fragment>
 		<RecoilRoot>
 			<Router />
 		</RecoilRoot>
-	</React.StrictMode>,
+	</React.Fragment>,
 	document.getElementById('root'),
 );

@@ -1,16 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState, useEffect, Conponent } from 'react';
+import React from 'react';
 import { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
 import './ImageCarousel.scss';
-
 import prevImage from '../../images/arrows/prevArrow.svg';
-
 import profile1 from '../../images/profile/profile1.jpg';
 import profile2 from '../../images/profile/profile2.jpg';
 import profile3 from '../../images/profile/profile3.jpg';

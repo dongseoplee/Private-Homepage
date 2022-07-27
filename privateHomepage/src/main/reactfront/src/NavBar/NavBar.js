@@ -78,11 +78,11 @@ const NavBar = () => {
 		if (size.width < 513) {
 			position = 2990;
 		} else if (size.width < 614) {
-			position = 2990;
+			position = 2790;
 		} else if (size.width < 878) {
-			position = 2660;
+			position = 2050;
 		} else if (size.width > 877 && size.width < 1228) {
-			position = 1840;
+			position = 1700;
 		} else if (size.width > 1228) {
 			position = 1980;
 		}
@@ -98,10 +98,20 @@ const NavBar = () => {
 		setIstoggle(!Istoggle);
 	};
 
+	const [userInfo, setUserInfo] = useState([]);
+
+	useEffect(() => {
+		fetch(`https://dongsseop2.com/privateHomepage/user`)
+			.then(res => res.json())
+			.then(data => {
+				setUserInfo(data[0]);
+			});
+	}, []);
+
 	return (
 		<div className="Nav">
 			<div className="Nav-left">
-				<div className="Nav-title">XXX의 홈페이지입니다.</div>
+				<div className="Nav-title">{userInfo.user_name}'s HomePage</div>
 			</div>
 			<div className="Nav-center" />
 			<div className="Nav-right">
