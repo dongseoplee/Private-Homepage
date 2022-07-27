@@ -10,24 +10,35 @@ import gitImg from '../../images/tech/git.png';
 import githubImg from '../../images/tech/github.jpg';
 import pythonImg from '../../images/tech/python.png';
 import javascriptImg from '../../images/tech/javascript.png';
+import javaImg from '../../images/tech/java.png';
+import springImg from '../../images/tech/spring.png';
+import awsImg from '../../images/tech/aws.png';
 
-const Skills = () => {
+const Skills = ({ skill }) => {
 	const techList = {
-		react: reactImg,
-		django: djangoImg,
-		git: gitImg,
-		github: githubImg,
-		python: pythonImg,
-		javascript: javascriptImg,
+		Eeact: reactImg,
+		Django: djangoImg,
+		Git: gitImg,
+		GitHub: githubImg,
+		Python: pythonImg,
+		JavaScript: javascriptImg,
+		Java: javaImg,
+		AWS: awsImg,
+		SpringBoot: springImg,
+		React: reactImg,
 	};
-	const techStr = 'react,django,git,github';
+
 	const [tech, setTech] = useState([]);
 
 	useEffect(() => {
 		// DB에서 str 형태로 온 스킬들을 배열 형태로 저장
-		let tmp = techStr.split(',');
-		setTech(tmp);
-	}, [techStr]);
+		setTimeout(() => {
+			console.log(skill);
+			let tmp = skill.split(', ');
+
+			setTech(tmp);
+		}, 300);
+	}, [skill]);
 
 	return (
 		<div className="skills">
@@ -38,7 +49,7 @@ const Skills = () => {
 				<div className="skills-table">
 					{tech.map(com => {
 						return (
-							<div className="each-table">
+							<div className="each-table" key={com}>
 								<img className="tech-image" src={techList[com]} />
 								<div className="tect-title">{com}</div>
 							</div>

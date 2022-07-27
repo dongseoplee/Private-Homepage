@@ -1,36 +1,62 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './ImageCarousel.scss';
 import prevImage from '../../images/arrows/prevArrow.svg';
-import profile1 from '../../images/profile/profile1.jpg';
-import profile2 from '../../images/profile/profile2.jpg';
-import profile3 from '../../images/profile/profile3.jpg';
+import rudwn1 from '../../images/profile/profile1.jpg';
+import rudwn2 from '../../images/profile/profile2.jpg';
+import rudwn3 from '../../images/profile/profile3.jpg';
 
-const ImageCarousel = () => {
-	const images = [
-		{
-			id: 1,
-			// src: 'https://blog.kakaocdn.net/dn/LhjTv/btrBsuEWxKZ/QL88HW1O9Q8BrqiwlIBdu1/img.jpg',
-			src: profile1,
-			alt: 'pr1',
-		},
-		{
-			id: 2,
-			// src: 'https://t1.daumcdn.net/cfile/tistory/9935CD355A818D6E1B',
-			src: profile2,
-			alt: 'pr2',
-		},
-		{
-			id: 3,
-			// src: 'https://images.khan.co.kr/article/2022/03/24/l_2022032402001438000274241.jpg',
-			src: profile3,
-			alt: 'pr3',
-		},
-	];
+import dong1 from '../../images/profile/dong1.jpg';
+import dong2 from '../../images/profile/dong2.jpg';
+import dong3 from '../../images/profile/dong3.jpg';
+import dong4 from '../../images/profile/dong4.jpg';
+
+const ImageCarousel = ({ user }) => {
+	const [images, setImages] = useState([]);
+
+	useEffect(() => {
+		if (user === 1) {
+			setImages([
+				{
+					id: 1,
+					src: dong2,
+					alt: 'pr1',
+				},
+				{
+					id: 2,
+					src: dong3,
+					alt: 'pr2',
+				},
+				{
+					id: 3,
+					src: dong4,
+					alt: 'pr3',
+				},
+			]);
+		} else if (user === 2) {
+			setImages([
+				{
+					id: 1,
+					src: rudwn1,
+					alt: 'pr1',
+				},
+				{
+					id: 2,
+					src: rudwn2,
+					alt: 'pr2',
+				},
+				{
+					id: 3,
+					src: rudwn3,
+					alt: 'pr3',
+				},
+			]);
+		}
+	}, [user]);
 
 	const carousel = useRef();
 	const settings = {

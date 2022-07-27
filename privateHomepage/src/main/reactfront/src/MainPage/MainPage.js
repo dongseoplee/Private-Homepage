@@ -12,13 +12,38 @@ const MainPage = () => {
 	const [userInfo, setUserInfo] = useState([]);
 
 	useEffect(() => {
-		fetch(`https://dongsseop2.com/privateHomepage/user`)
+		fetch(`https://dongsseop2.com/privateHomepage/user/`)
 			.then(res => res.json())
 			.then(data => {
-				setUserInfo(data[0]);
 				console.log(data);
+				setUserInfo(data[0]);
 			});
 	}, []);
+
+	const [projectUrls, setProjectUrls] = useState([]);
+	const [projectDesc, setProjectDesc] = useState([]);
+
+	useEffect(() => {
+		let url_tmp = [];
+		let desc_tmp = [];
+		if (userInfo.project5_info === null) {
+			url_tmp.push(userInfo.project1_url);
+			desc_tmp.push(userInfo.project1_info);
+		} else {
+			url_tmp.push(userInfo.project1_url);
+			url_tmp.push(userInfo.project2_url);
+			url_tmp.push(userInfo.project3_url);
+			url_tmp.push(userInfo.project4_url);
+			url_tmp.push(userInfo.project5_url);
+			desc_tmp.push(userInfo.project1_info);
+			desc_tmp.push(userInfo.project2_info);
+			desc_tmp.push(userInfo.project3_info);
+			desc_tmp.push(userInfo.project4_info);
+			desc_tmp.push(userInfo.project5_info);
+		}
+		setProjectUrls(url_tmp);
+		setProjectDesc(desc_tmp);
+	}, [userInfo]);
 
 	return (
 		<div>
@@ -26,13 +51,13 @@ const MainPage = () => {
 				<div className="container">
 					<div className="intro1">
 						<div className="intro-table">
-							<ImageCarousel />
+							<ImageCarousel user={userInfo.number} />
 							<div className="right-table">
 								<Fade triggerOnce>
 									<div className="profile-content">Hello</div>
 								</Fade>
 								<Fade triggerOnce delay={1500}>
-									<div className="profile-content">Frontend Developer</div>
+									<div className="profile-content">{userInfo.job}</div>
 								</Fade>
 								<Fade triggerOnce delay={3000}>
 									<div className="profile-content">{userInfo.user_name}</div>
@@ -49,8 +74,8 @@ const MainPage = () => {
 						university={userInfo.university}
 						dept={userInfo.dept}
 					/>
-					<Skills />
-					<Mysite git={userInfo.git_url} />
+					<Skills skill={userInfo.skill} />
+					<Mysite git={userInfo.git_url} projectUrls={projectUrls} projectDesc={projectDesc} />
 				</div>
 			)}
 		</div>
