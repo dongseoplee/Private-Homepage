@@ -5,6 +5,7 @@ import com.example.privateHomepage.repository.SampleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -17,10 +18,12 @@ public class SampleService {
         return sampleRepository.findAll();
     }
 
-    /*
-    public List<Sample> getSamplesByUserName(String userName) {
 
-        return sampleRepository.findByUserName(userName);
+
+/*
+    public List<Sample> getSamplesByUserName(Long number) {
+
+        return sampleRepository.findAllById(Collections.singleton(number));
     }
-    */
+*/
 }

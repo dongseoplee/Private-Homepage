@@ -1,33 +1,50 @@
 package com.example.privateHomepage.domain;
 
 import lombok.*;
+import org.springframework.web.bind.annotation.GetMapping;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Data
+@ToString
+@Getter
+@Builder
 @AllArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Entity(name = "USER_TABLE")
+@NoArgsConstructor
+@Table(name = "USER_TABLE_TEST")
+@Entity
 public class Sample {
 
+    //DB column 생성
+    //https://dev-coco.tistory.com/85
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long number;
+
+    @Column(length = 200, nullable = false)
+    private String user_name;
+
+    @Column(length = 200, nullable = false)
+    private String university;
+
+    @Column(length = 200, nullable = false)
+    private String dept;
+
+    @Column(length = 200, nullable = false)
+    private String birthday;
+
+    @Column(length = 200, nullable = false)
+    private String location;
+
+    @Column(length = 200, nullable = false)
+    private String email_address;
+
+    @Column(length = 200, nullable = false)
+    private String phone_number;
+
+    @Column(length = 200, nullable = false)
+    private String git_url;
+
     /*
-    [DB columns]
-    userName
-    university
-    dept
-    birthday
-    location
-    emailAddress
-    phoneNumber
-    gitURL
-    HTMLCSSJS
-    react
-    python
-    mySql
-     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long number;
@@ -61,4 +78,24 @@ public class Sample {
         this.phone_number = phone_number;
         this.git_url = git_url;
     }
+
+
+     */
+
+
+    /*
+    [DB columns]
+    userName
+    university
+    dept
+    birthday
+    location
+    emailAddress
+    phoneNumber
+    gitURL
+    HTMLCSSJS
+    react
+    python
+    mySql
+     */
 }
