@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import './MainPage.scss';
 
 import About from './About/About';
@@ -9,43 +9,75 @@ import Skills from './Skills/Skills';
 import Mysite from './Mysite/Mysite';
 
 const MainPage = () => {
-	const [line2, setline2] = useState(false);
-	const [line3, setline3] = useState(false);
+	const [userInfo, setUserInfo] = useState([]);
 
 	useEffect(() => {
-		setTimeout(() => {
-			setline2(true);
-		}, 1500);
-		setTimeout(() => {
-			setline3(true);
-		}, 3000);
+		fetch(`https://dongsseop2.com/privateHomepage/user/`)
+			.then(res => res.json())
+			.then(data => {
+				console.log(data);
+				setUserInfo(data[0]);
+			});
 	}, []);
 
+	const [projectUrls, setProjectUrls] = useState([]);
+	const [projectDesc, setProjectDesc] = useState([]);
+
+	useEffect(() => {
+		let url_tmp = [];
+		let desc_tmp = [];
+		if (userInfo.project5_info === null) {
+			url_tmp.push(userInfo.project1_url);
+			desc_tmp.push(userInfo.project1_info);
+		} else {
+			url_tmp.push(userInfo.project1_url);
+			url_tmp.push(userInfo.project2_url);
+			url_tmp.push(userInfo.project3_url);
+			url_tmp.push(userInfo.project4_url);
+			url_tmp.push(userInfo.project5_url);
+			desc_tmp.push(userInfo.project1_info);
+			desc_tmp.push(userInfo.project2_info);
+			desc_tmp.push(userInfo.project3_info);
+			desc_tmp.push(userInfo.project4_info);
+			desc_tmp.push(userInfo.project5_info);
+		}
+		setProjectUrls(url_tmp);
+		setProjectDesc(desc_tmp);
+	}, [userInfo]);
+
 	return (
-		<div className="container">
-			<div className="intro1">
-				<div className="intro-table">
-					<ImageCarousel />
-					<div className="right-table">
-						<Fade top>
-							<div className="profile-content">안녕하세요.</div>
-						</Fade>
-						{line2 ? (
-							<Fade top>
-								<div className="profile-content">가천대학교 AI·소프트웨어학부(소프트웨어전공)</div>
-							</Fade>
-						) : null}
-						{line3 ? (
-							<Fade top>
-								<div className="profile-content">이동섭입니다.</div>
-							</Fade>
-						) : null}
+		<div>
+			{userInfo === [] ? null : (
+				<div className="container">
+					<div className="intro1">
+						<div className="intro-table">
+							<ImageCarousel user={userInfo.number} />
+							<div className="right-table">
+								<Fade triggerOnce>
+									<div className="profile-content">Hello</div>
+								</Fade>
+								<Fade triggerOnce delay={1500}>
+									<div className="profile-content">{userInfo.job}</div>
+								</Fade>
+								<Fade triggerOnce delay={3000}>
+									<div className="profile-content">{userInfo.user_name}</div>
+								</Fade>
+							</div>
+						</div>
 					</div>
+					<About
+						name={userInfo.user_name}
+						location={userInfo.location}
+						birthday={userInfo.birthday}
+						email={userInfo.email_address}
+						phone_number={userInfo.phone_number}
+						university={userInfo.university}
+						dept={userInfo.dept}
+					/>
+					<Skills skill={userInfo.skill} />
+					<Mysite git={userInfo.git_url} projectUrls={projectUrls} projectDesc={projectDesc} />
 				</div>
-			</div>
-			<About />
-			<Skills />
-			<Mysite />
+			)}
 		</div>
 	);
 };

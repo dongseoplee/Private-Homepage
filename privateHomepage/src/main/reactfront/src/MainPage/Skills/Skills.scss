@@ -11,7 +11,7 @@
 	justify-content: center;
 	place-items: center;
 	// background-color: #f9c51d;
-	background-color: #F0EDCC;
+	background-color: #f0edcc;
 
 	.title {
 		width: 150px;
@@ -22,94 +22,73 @@
 		font-family: NanumSquareOTF;
 		font-size: 2.1rem;
 		font-weight: 800;
-		border-bottom: 3px solid #02343F;
+		border-bottom: 3px solid #02343f;
 		margin-bottom: 1rem;
-		color: #02343F;
+		color: #02343f;
 	}
 
 	@media only screen and (min-width: 877.8px) {
 		.skills-table {
+			margin-top: 2rem;
+			background-color: white;
 			width: auto;
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			place-items: center;
+			grid-template-columns: 1fr 1fr;
+			border-radius: 12px;
 
 			.each-table {
-				width: auto;
+				margin-bottom: 1rem;
+				margin-top: 1rem;
 				display: flex;
-				background-color: white;
-				border-radius: 24px;
-				margin-left: 2rem;
-				margin-right: 2rem;
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
 
-				.tech-image {
-					width: 90%;
-					padding: 4.5rem 1rem 1rem 1rem;
-					margin-top: 1rem;
-					display: flex;
-				}
+			.tect-title {
+				font-size: 1.7rem;
+				padding-top: 0.4rem;
+				font-family: NanumSquareOTF;
+				font-weight: 800;
+			}
 
-				.tech-desc {
-					width: 8%;
-					position: absolute;
-					color: #f4623a;
-					font-size: 2.2rem;
-					font-family: NanumSquareOTF;
-					font-weight: 800;
-					margin-left: 1.5rem;
-					margin-top: 1.5rem;
-				}
-
-				.underline {
-					position: absolute;
-					width: 13rem;
-					margin-top: 4.3rem;
-					margin-left: 1.3rem;
-					border-bottom: 2px solid #ccc;
-				}
+			.tech-image {
+				width: auto;
+				height: 3rem;
+				margin-right: 1rem;
+				background: white;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 878px) {
 		.skills-table {
+			margin-top: 2rem;
+			background-color: white;
 			width: auto;
 			display: grid;
 			grid-template-columns: 1fr;
-			place-items: center;
+			border-radius: 12px;
 
 			.each-table {
-				width: auto;
+				margin-bottom: 1rem;
+				margin-top: 1rem;
 				display: flex;
-				background-color: white;
-				border-radius: 24px;
-                margin-top: 2rem;
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
 
-				.tech-image {
-					width: 90%;
-					padding: 4.5rem 1rem 1rem 1rem;
-					margin-top: 1rem;
-					display: flex;
-				}
+			.tect-title {
+				font-size: 1.7rem;
+				padding-top: 0.4rem;
+				font-family: NanumSquareOTF;
+				font-weight: 800;
+			}
 
-				.tech-desc {
-					width: 8%;
-					position: absolute;
-					color: #f4623a;
-					font-size: 2.2rem;
-					font-family: NanumSquareOTF;
-					font-weight: 800;
-					margin-left: 1.5rem;
-					margin-top: 1.5rem;
-				}
-
-				.underline {
-					position: absolute;
-					width: 13rem;
-					margin-top: 4.3rem;
-					margin-left: 1.3rem;
-					border-bottom: 2px solid #ccc;
-				}
+			.tech-image {
+				width: auto;
+				height: 3rem;
+				margin-right: 1rem;
+				background: white;
 			}
 		}
 	}
