@@ -44,6 +44,40 @@ public class Sample {
     @Column(length = 200, nullable = false)
     private String git_url;
 
+    @Column(length = 200, nullable = false)
+    private String skill;
+
+    @Column(length = 200, nullable = false)
+    private String job;
+
+    @Column(length = 200, nullable = true)
+    private String project1_url;
+    @Column(length = 200, nullable = true)
+    private String project1_info;
+
+    @Column(length = 200, nullable = true)
+    private String project2_url;
+    @Column(length = 200, nullable = true)
+    private String project2_info;
+
+    @Column(length = 200, nullable = true)
+    private String project3_url;
+    @Column(length = 200, nullable = true)
+    private String project3_info;
+
+    @Column(length = 200, nullable = true)
+    private String project4_url;
+    @Column(length = 200, nullable = true)
+    private String project4_info;
+
+    @Column(length = 200, nullable = true)
+    private String project5_url;
+    @Column(length = 200, nullable = true)
+    private String project5_info;
+
+
+
+
     /*
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

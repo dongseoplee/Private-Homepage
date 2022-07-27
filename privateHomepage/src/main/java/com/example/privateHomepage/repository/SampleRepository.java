@@ -9,9 +9,5 @@ import java.util.List;
 @Repository
 public interface SampleRepository extends JpaRepository<Sample, Long> {
 
-
-
-
-
 } //<sample (클래스 이름), String (pk의 자료형)>
 
