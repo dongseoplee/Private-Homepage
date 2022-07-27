@@ -84,7 +84,7 @@ const NavBar = () => {
 		} else if (size.width > 877 && size.width < 1228) {
 			position = 1700;
 		} else if (size.width > 1228) {
-			position = 1980;
+			position = 1840;
 		}
 
 		window.scrollTo({
@@ -104,7 +104,7 @@ const NavBar = () => {
 		fetch(`https://dongsseop2.com/privateHomepage/user`)
 			.then(res => res.json())
 			.then(data => {
-				setUserInfo(data[0]);
+				setUserInfo(data[0]); //0: lds 1:cgj
 			});
 	}, []);
 
