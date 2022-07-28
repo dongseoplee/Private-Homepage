@@ -76,15 +76,15 @@ const NavBar = () => {
 		setIstoggle(false);
 		let position = 0;
 		if (size.width < 513) {
-			position = 2990;
+			position = 2400;
 		} else if (size.width < 614) {
-			position = 2790;
+			position = 2400;
 		} else if (size.width < 878) {
 			position = 2050;
 		} else if (size.width > 877 && size.width < 1228) {
 			position = 1700;
 		} else if (size.width > 1228) {
-			position = 1980;
+			position = 1840;
 		}
 
 		window.scrollTo({

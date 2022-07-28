@@ -17,7 +17,7 @@ const Mysite = ({ git, projectDesc, projectUrls }) => {
 				<Fade triggerOnce direction="up">
 					<div className="each-table">
 						<li className="site-desc">GitHub Profile</li>
-						<a href="https://github.com/ChoiGyeongJu" className="site-url">
+						<a href={git} className="site-url">
 							{git}
 						</a>
 					</div>
