@@ -12,8 +12,6 @@
 	.Nav {
 		background-color: #02343f;
 		width: 100%;
-		margin-top: -0.7rem;
-		margin-left: -0.6rem;
 		height: 4.9rem;
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		display: flex;
@@ -25,13 +23,12 @@
 		}
 
 		.Nav-left {
-			padding-top: 32px;
+			padding-top: 26px;
 			width: 50%;
 			display: flex;
 			justify-content: center;
 
 			.Nav-title {
-				// font-size: 16px;
 				font-size: 1rem;
 				display: flex;
 				font-weight: 800;
@@ -46,13 +43,12 @@
 		}
 
 		.Nav-right {
-			padding-top: 32px;
+			padding-top: 28px;
 			width: 50%;
 			display: flex;
 			justify-content: center;
 
 			.Nav-menu {
-				// font-size: 16px;
 				font-size: 1rem;
 				display: flex;
 				font-weight: 600;
@@ -73,9 +69,6 @@
 	.Nav {
 		background-color: #02343f;
 		width: 100%;
-		margin-top: -0.7rem;
-		margin-left: -0.6rem;
-		padding-right: 5rem;
 		height: 4.9rem;
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		display: flex;
@@ -85,6 +78,7 @@
 		.menu-list {
 			position: absolute;
 			width: 100%;
+			margin-left: -0.5rem;
 			margin-top: 3.56rem;
 			height: auto;
 			background-color: #02343f;
