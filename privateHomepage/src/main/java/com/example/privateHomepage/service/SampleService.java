@@ -20,10 +20,10 @@ public class SampleService {
 
 
 
-/*
+
     public List<Sample> getSamplesByUserName(Long number) {
 
-        return sampleRepository.findAllById(Collections.singleton(number));
+        return sampleRepository.findAllByUserNumber(number);
     }
-*/
+
 }

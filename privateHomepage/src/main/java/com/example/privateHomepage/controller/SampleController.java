@@ -22,12 +22,12 @@ public class SampleController {
         return sampleService.getSamples();
     }
 
-    /*
+
     @GetMapping(value = "/privateHomepage/user/{number}")
     public List<Sample> getSamples(@PathVariable Long number) {
         return sampleService.getSamplesByUserName(number);
     }
-*/
+
 
     /*
     @GetMapping(value = "/samples/{userName}")
