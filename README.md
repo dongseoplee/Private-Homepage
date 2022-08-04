@@ -25,7 +25,7 @@ My GitHub repository url
 
 <img src="https://user-images.githubusercontent.com/76763417/182359233-f3f477e6-8c28-402d-9261-adb3c4787200.png" width=800 height=400>
 
-### Putter
+### Footer
 Made by 최경주, 이동섭
 
 <img src="https://user-images.githubusercontent.com/76763417/182359262-1fd02afa-f638-4d44-a9ab-ab6d0a1d521a.png" width=800 height=400>
