@@ -16,7 +16,7 @@ const MainPage = () => {
 			.then(res => res.json())
 			.then(data => {
 				console.log(data);
-				setUserInfo(data[0]); //0: lds 1:cgj
+				setUserInfo(data[1]); //0: lds 1:cgj
 			});
 	}, []);
 
