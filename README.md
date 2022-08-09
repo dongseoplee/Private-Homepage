@@ -6,6 +6,7 @@ I thought it was an opportunity to practice back-end and front-end collaboration
 It is to spend time well during vacation.
 
 ## Screenshots
+From a Chrome browser, go to https://dongsseop2.com
 ### Home
 3 pictures of my profile and greeting
 <img src="https://user-images.githubusercontent.com/76763417/182359089-e1ee6595-d1e8-47a7-80a4-01814b105bb2.png" width=800 height=400>
