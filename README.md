@@ -1,4 +1,4 @@
-# private-homepage
+# private(personal)-homepage
 2022 Summer Vacation Private Homepage Project
 ## Background of the project
 We each had a server. It was a waste to leave this server alone, so I decided to create a personal homepage(Responsive Web).
