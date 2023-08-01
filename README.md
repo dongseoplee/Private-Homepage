@@ -44,3 +44,10 @@ Made by 최경주, 이동섭
 [BE] Springboot, AWS EC2
 
 [Database] Maria DB
+
+## UPDATE
+The React project file and the Springboot project file were separated.
+
+React: https://github.com/dongseoplee/private-homepage-v2-front
+
+Springboot: https://github.com/dongseoplee/private-homepage-v2-back
