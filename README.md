@@ -29,7 +29,7 @@ My GitHub repository url
 ### Footer
 Made by 최경주, 이동섭
 
-<img src="https://user-images.githubusercontent.com/76763417/182359262-1fd02afa-f638-4d44-a9ab-ab6d0a1d521a.png" width=800 height=400>
+<img src="https://user-images.githubusercontent.com/76763417/182359262-1fd02afa-f638-4d44-a9ab-ab6d0a1d521a.png" width=300 height=240>
 
 ## Execute at localhost
 1. Download zip file
@@ -43,7 +43,11 @@ Made by 최경주, 이동섭
 
 [BE] Springboot, AWS EC2
 
-[Database] Maria DB
+[Database] Maria DB -> MySQL (v2)
+
+
+## Backend Structure
+<img src="https://github.com/dongseoplee/private-homepage-v2-back/assets/76763417/9806876b-bd80-4966-8d5a-eb75d1d01ac0" width=800 height=400>
 
 ## UPDATE
 The React project file and the Springboot project file were separated.
